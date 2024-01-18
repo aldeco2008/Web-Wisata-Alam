@@ -1,0 +1,310 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+  }
+  
+  html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .layar-dalam {
+    width: 1000px;
+    margin: auto;
+  }
+  
+  .layar-penuh {
+    width: 100%;
+  }
+  
+  nav {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #b1b1b1;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+  }
+  nav.putih {
+    background-color: #ffffff;
+  }
+  
+  nav .logo {
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+  }
+  
+  nav .logo img {
+    vertical-align: middle;
+    width: 120px;
+  }
+  
+  nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 600px;
+  }
+  
+  nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+  }
+  
+  nav ul li a {
+    color: #ddd;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* pengaturan header */
+  header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  header .intro {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 50%;
+  }
+  
+  header .intro h3 {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tombol {
+    z-index: 101; /* Adjust this value based on your needs */
+    position: relative; /* Ensure it's positioned relative or absolute */
+    background-color: #4737ff;
+    height: 40px;
+    line-height: 42px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+    font-size: 15px; /* Add 'px' unit */
+    border-radius: 4px;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 50%;
+    z-index: -1;
+  }
+  
+  .tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+  }
+  .tombol-menu .garis {
+    position: absolute;
+    top: 1.8rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+  }
+  
+  .tombol-menu .garis{
+    height: 3px;
+    background-color: #fff;
+  }
+  
+  section {
+    padding: 50px 0px 50px 0px;
+  }
+  
+  section h3 {
+    font-size: 30px;
+  }
+  
+  section h3::after {
+    content: "";
+    border-bottom: 5px solid #4737ff ;
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+  }
+  #aboutus {
+    text-align: center;
+  }
+  
+  section p.ringkasan{
+    font-size: 18px;
+    font-style: italic;
+    color: #666;
+  }
+  
+  section .konten-isi p{
+    font-style: normal;
+  }
+  
+  nav.putih{
+    background-color: #fff;
+  }
+  
+  nav.putih .tombol-menu .garis {
+    background-color: #333;
+  }
+  nav.putih ul li a{
+    color: #333;
+  }
+  nav .logo img.hitam {
+      display: none;
+  }
+  
+  section.abuabu{
+    background-color: #f5f6f6;
+  }
+  
+  .support,
+  .tim {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .support h6 {
+    margin: 0px;
+    padding: 0px;
+    font: size 18px;
+    font-weight: bold;
+  }
+  
+  .support img {
+    width: 50px;
+  }
+  
+  .support div {
+    text-align: center;
+    width: 26%;
+  }
+  
+  section#gallery {
+    display: flex;
+    flex-wrap: wrap; /* Ini memungkinkan elemen untuk pindah ke baris berikutnya */
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 10px 0px;
+  }
+  
+  section#gallery div {
+    flex: 0 1 calc(33.33% - 20px); /* Ukuran sekitar 1/3 dari lebar container dengan sedikit ruang */
+    box-sizing: border-box; /* Memastikan padding tidak meningkatkan lebar div */
+    padding: 10px;
+    margin: 10px 0; /* Menambahkan margin antara baris */
+  }
+  
+  section#gallery img {
+    max-width: 100%; /* Membuat gambar tidak melebihi lebar div */
+    height: auto; /* Memastikan aspek gambar tetap terjaga */
+  }
+  
+  section#gallery div img:hover {
+    transition: all o.2s ease ease-in-out;
+    transform: scale(1.1);
+  }
+  
+  section.quote {
+    background: url('Assets/background-bromo.jpg') no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#fff;
+    font-style:  20px;
+    font-style: italic;
+    padding: 100px;
+  }
+  
+  section.quote .layar-dalam p{
+    display: inline;
+    background: url('Assets/quote-icon.png') no-repeat;
+    padding: 40px;
+  }
+  
+  .tim img {
+    width: 100%;
+    box-shadow: 0px -10px 30px #ccc;
+    border-radius: 5px;
+  }
+  
+  @media screen and (max-width: 991.98px) {
+    .layar-dalam {
+      width: 90%;
+    }
+  
+    nav .menu ul {
+      display: none;
+      margin-top: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  
+    nav .menu ul li {
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      background-color: #fff;
+      line-height: 40px;
+    }
+    
+    nav .menu ul li a {
+      color: #333;
+    } 
+  
+    .tombol-menu{
+      display: flex;
+    }
+  }
+  
